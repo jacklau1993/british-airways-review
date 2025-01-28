@@ -1,31 +1,47 @@
-## Introduction
-This is a project visualising British Airways Customer Reviews and Ratings on various areas.
+# Project Overview
+This project involves the analysis and visualization of British Airways customer reviews to gain insights into passenger experiences and satisfaction levels. The primary objective was to create an interactive and dynamic dashboard using Tableau to effectively present the findings.
 
 ## Quick Link
 [Dashboard](https://public.tableau.com/views/BritishAirwaysReviews_17323955846680/Dashboard1?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-## Scenario
-I've been tasked to create a dashboard using Tableau to visualise the data of British Airway Customer Reviews. The dashboard should be dynamic and interactive.
+# Data Collection and Cleaning
+The analysis was conducted using two primary datasets:
+1. Reviews Dataset: Contains customer reviews with ratings across various categories.
+2. Countries Dataset: Provides country-specific information to map review origins.
 
-## Process
-### Data cleaning
-The original dataset needs cleaning. The rating in multiple fields are invalid as the rating should be from 1 to 10. But in the dataset, some ratings are in negative values. Therefore, I use Excel to clean the data, turning negative ratings to positive ratings.
+Data Cleaning Steps:
+- Rating Corrections: Identified and rectified invalid ratings (e.g., negative values) by converting them to their absolute positive counterparts.
+- Handling Missing Values: Replaced blank entries with null values to ensure data integrity during analysis.
 
-Also, I check if there is any missing values. If there is, I make it as a null value rather than leave it blank. After cleaning the dataset, the next step is to create a dashboard using Tableau.
+Tools Used: Microsoft Excel for data cleaning and preprocessing.
+# Data Integration and Modeling
+In Tableau:
+- Data Integration: Established relationships between the Reviews and Countries datasets using the 'place' field from Reviews and the 'Country' field from Countries.
+- Data Modeling: Ensured accurate data representation by defining appropriate joins and relationships, facilitating comprehensive analysis.
 
+# Dashboard Development
+The Tableau dashboard comprises four main components:
 
-### Dashboard creating
-To start with, I load the datasets into Tableau and create a relationship between two tables. I use 'place' in the review.csv file and 'Country' in the Countries.csv file as a joint between datasets.
+1. Summary:
+   - Displays key metrics such as average ratings, total number of reviews, and distribution of ratings across different categories.
 
-To create a interactive dashboard, there are four components: Summary, Map, Month, and Aircraft.
+2. Geographical Analysis (Map):
+   - Visualizes the distribution of reviews globally, highlighting countries with the highest number of reviews and average satisfaction levels.
 
-First of all, I create a parameter to show the metric of the reviews. Then I create a calculated field to show the average metric selected. After that, I add the rest of the filters. From there, the Map element is completed.
+3. Temporal Analysis (Month):
+   - Illustrates trends over time, showing how customer satisfaction and review counts vary across different months.
 
-Second, I create a summary banner showing the average overall rating, average cabin staff service score, average entertainment score, average food beverages score, average ground service score, average seat comfort score, average value for money score.
+4. Aircraft Type Analysis:
+   - Analyzes customer ratings based on different aircraft types to identify any correlations between aircraft models and passenger satisfaction.
 
-Third, I creat a line graph showing the average metric selected by Month. Lastly, I create a dual bar graph to show the average metric by aircraft and number of reviews.
+Interactive Features:
+- Filters: Allow users to drill down into specific time frames, countries, or rating categories.
+- Hover Actions: Provide detailed information when hovering over data points, enhancing user engagement and insight discovery.
 
-After finishing all the elements, the rest is to put all elements together and design the dashboard making it easy to read and appealing to watch.
+# Key Insights
+- Geographical Trends: Identified regions with higher or lower satisfaction levels, informing targeted improvements.
+- Temporal Patterns: Observed fluctuations in customer satisfaction over time, potentially correlating with seasonal factors or operational changes.
+- Aircraft Performance: Determined which aircraft types received higher ratings, guiding future fleet decisions.
 
-## Conclusion
-The dashboard of British Airways Reviews is a good example of my skills and ability using Tableau to analyse data and create visuals. 
+# Conclusion
+This project demonstrates proficiency in data cleaning, integration, and visualization techniques. The resulting dashboard offers valuable insights into British Airways' customer satisfaction metrics, supporting data-driven decision-making to enhance passenger experiences.
